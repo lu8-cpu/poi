@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.qfedu.day73_poi.dao.UserDao">
+
+
+    <insert id="insert" parameterType="user">
+		insert into t_user(name,age,phone) values(#{name},#{age},#{phone})
+	</insert>
+</mapper>
